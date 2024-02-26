@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            White: "hsl(0, 0%, 100%)",
+            Grey: "hsl(0, 0%, 20%)",
+            DarkGrey: "hsl(0, 0%, 12%)",
+            OffBlack: "hsl(0, 0%, 8%)",
+            Green: "hsl(75, 94%, 57%)"
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Social links profile</title>
+</head>
+
+<body>
+  <main class="h-screen w-screen flex items-center justify-center bg-OffBlack max-md:px-5 overflow-hidden">
+    <div class="bg-DarkGrey flex flex-col justify-center items-center max-w-80 p-10 rounded-lg gap-4">
+      <img src="/assets/images/avatar-jessica.jpeg" width="100" height="100" class="rounded-full" alt="">
+      <h1 class="font-bold text-2xl text-white mt-5">Jessica Randall</h1>
+      <span class="text-Green font-semibold">London, United Kingdom</span>
+      <p class="text-white mt-2 text-[12px]">"Front-end developer and avid reader."</p>
+      <button class="w-full rounded-lg flex justify-center items-center bg-Grey py-3 text-white mt-5">Github</button>
+      <button class="w-full rounded-lg flex justify-center items-center bg-Grey py-3 text-white "> Frontend
+        Mentor</button>
+      <button class="w-full rounded-lg flex justify-center items-center bg-Grey py-3 text-white "> LinkedIn</button>
+      <button class="w-full rounded-lg flex justify-center items-center bg-Grey py-3 text-white "> Twitter</button>
+      <button class="w-full rounded-lg flex justify-center items-center bg-Grey py-3 text-white ">
+        Instagram</button>
+    </div>
+  </main>
+</body>
+
+</html>
